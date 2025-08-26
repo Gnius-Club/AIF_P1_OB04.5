@@ -1,24 +1,418 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes del Tesoro Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 1: Guardianes del Tesoro Digital</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+                <li><a href="#activity-6">6</a></li>
+                <li><a href="#activity-7">7</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender qué información personal me identifica en el mundo real (nombre, gustos, rostro).</li>
+                                        <li>Distinguir entre información pública y privada.</li>
+                                        <li>Reconocer situaciones comunes donde se comparte información digitalmente.</li>
+                                        <li>Comprender que hay datos personales que no deben mostrarse en plataformas digitales.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Activación Gnius Club</strong></li>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Objetivos de la Misión: "I Can Statement"</strong></li>
+                                        <li><strong class="tactic-highlight">Brain Boost</strong></li>
+                                        <li><strong class="tactic-highlight">Gamer Express</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge</strong></li>
+                                        <li><strong class="tactic-highlight">Clave Secreta de la Misión</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Creación de una "clave secreta" (frase/rima) que resume el aprendizaje sobre privacidad digital.</li>
+                                        <li>Clasificación kinestésica de información personal (tesoro privado vs. pizarra pública).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Imagenes/tarjetas para clasificar.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Activación Gnius Club ⏰ 3 minutos</h2>
+                <p>Presentar la dinámica de activación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Activación Gnius Club ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Activación Gnius Club: "Estatuas Tecnológicas".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡A calentar motores, genios! 🚀 Hoy vamos a descubrir una parte súper especial de Gnius Club. Además de nuestras misiones de tecnología en clase, tienen unas Aventuras Digitales secretas que harán desde casa para convertirse en héroes de internet. Hoy vamos a entrenar para nuestra primera Aventura Digital todos juntos. Y para prepararnos, ¡vamos a jugar a las Estatuas Tecnológicas! Pongan música en su imaginación, y cuando yo grite '¡Congelados!', se detienen y hacen una estatua de la palabra que yo diga.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación Gnius Club ⏰ 2 minutos</h3>
+                            <p>Guía el juego, conectando la última estatua con el tema de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Música!... ¡CONGELADOS! ¡ESTATUA DE SELFIE! 📸... ¡Geniales! (música)... ¡CONGELADOS! ¡ESTATUA DE CONTRASEÑA! 🤫... ¡Wow, qué buenas estatuas protectoras! ¡Están guardando un secreto súper importante!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Recuerdo Relámpago ⏰ 4 minutos</h2>
+                <p>Presentar la situación especial de ser la primera misión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Proyecta diapositiva 3. Recuerdo Relámpago: Forjando la Primera Clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Atención, exploradores! Esta es nuestra PRIMERA MISIÓN juntos. ¡Qué emoción! 🥳 Eso significa que no tenemos una clave secreta de una misión anterior... ¡AÚN!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Los niños levantan la mano para comprometerse a crear la primera clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hoy, ustedes y yo vamos a empezar nuestra gran cadena de sabiduría! Vamos a forjar el primer eslabón. Levanten la mano si están listos para crear nuestro primer gran secreto de Gnius Club al final de esta aventura. ¡SÍ! ¡Esa es la energía!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Objetivos de la Misión: "I Can Statement" ⏰ 3 minutos</h2>
+                <p>Presentar la meta de la sesión de forma visual y con una metáfora.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Objetivos de la Misión: "I Can Statement" ⏰ 1.5 minutos</h3>
+                            <p>Proyecta diapositiva 4. Objetivos de la Misión. (Imagen de un niño/a sonriente abrazando un cofre del tesoro con un candado 🔐)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipo, miren la pantalla! Hoy, nuestra misión es convertirnos en... ¡GUARDIANES DEL TESORO DIGITAL! 💎 Vamos a descubrir qué información es un tesoro tan valioso que debemos guardarlo en nuestro cofre secreto para que esté siempre seguro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivos de la Misión: "I Can Statement" ⏰ 1.5 minutos</h3>
+                            <p>Los niños repiten en coro una frase corta y hacen el gesto de cerrar un candado y girar la llave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Vamos a decirlo juntos con nuestro gesto de guardián! (haciendo el gesto de cerrar un candado) Nuestra misión de entrenamiento de hoy es doble: aprender que 'Mi info es un tesoro, yo la cuido y la valoro', ¡Y aprender cómo se completa una Aventura Digital de Gnius Club! ¡Vamos con todo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Brain Boost ⏰ 5 minutos</h2>
+                <p>Despertar curiosidad con una historia emocional sobre compartir de más.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Boost ⏰ 2 minutos</h3>
+                            <p>Proyecta diapositiva 5. Brain Boost: Storytelling.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Les voy a contar la historia de Leo. Leo ama a su perrito Chispa y le toma una foto increíble para subirla a su juego favorito. En la foto se ve a Chispa, ¡pero también se ve el número de su casa y un dibujo en la pared con su nombre completo! 📸</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Boost ⏰ 2 minutos</h3>
+                            <p>Proyecta diapositiva 6. Pregunta Provocadora.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Amigos, piensen como detectives... ¿crees que Leo compartió solo una foto de su perrito, o compartió algo más sin querer? ¿Qué tesoros secretos mostró?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Boost ⏰ 1 minutos</h3>
+                            <p>Conexión a la Misión (sin diapositiva, es parte del diálogo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Exacto! ¡También compartió dónde vive y cómo se llama! A veces, sin darnos cuenta, mostramos nuestros tesoros más importantes. ¡Justo eso vamos a aprender a proteger hoy para que no nos pase como a Leo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gamer Express ⏰ 10 minutos</h2>
+                <p>Conectar la historia y guiar a los estudiantes en la plataforma.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gamer Express ⏰ 10 minutos</h3>
+                            <p>Proyecta diapositiva 7. Gamer Express: Activación Plataforma y Timer de 10 min.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble análisis, detectives! Ahora viene la parte especial. Normalmente, estas Aventuras Digitales las harán en casa, a su propio ritmo. Son 16 aventuras durante el año que encontrarán en la plataforma Gnius Club.
+
+Pero como hoy es nuestro entrenamiento, ¡vamos a conquistar la primera Aventura Digital JUNTOS! Así aprenderán exactamente cómo funcionan. Para estas misiones, tendrán una guía especial, una IA sabia y amable llamada Ada. Ella les presentará los retos en la plataforma.
+
+¡Así que es hora del Gamer Express! Ingresen a la plataforma Gnius Club y busquen su primera Aventura Digital llamada "Guardianes del Tesoro Digital". ¡Vamos a completarla juntos aquí y ahora!
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-6">
+                <h2>⚡ Actividad 6: Challenge ⏰ 10 minutos</h2>
+                <p>Introducir la dinámica de juego desconectada, kinestésica y visual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge ⏰ 2 minutos</h3>
+                            <p>Proyecta diapositiva 8. Challenge: Cofre del Tesoro vs. Pizarra Pública.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegó el momento del gran reto, guardianes! 💪 Tenemos dos zonas en el salón. Aquí está el Cofre del Tesoro (una caja con un 🔒 dibujado) y allá la Pizarra Pública (un aro con un 👍 dibujado). ¡Vamos a clasificar información!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge ⏰ 4 minutos</h3>
+                            <p>Proyecta al grupo las imagenes/ tarjetas</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Revisaremos en la pantalla unas tarjetas mágicas con dibujos. Su misión es decidir en pareja si esa información es un tesoro secreto que va en el cofre, o algo que se puede compartir con todos en la pizarra."<br>DIBUJOS: una casa, un helado, un nombre completo con apellidos, un color favorito.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: ¡A Clasificar! ⏰ 2 minutos</h3>
+                            <p>Los niños corren a depositar cada tarjeta en la zona correspondiente.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Cuando diga 'YA!', me dicen en voz alta dónde colocar cada tarjeta. Receurden que debe ser en su lugar correcto! ¡Rápido, guardianes, a proteger esos tesoros! ¡3, 2, 1... YA!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Revisión en Grupo ⏰ 2 minutos</h3>
+                            <p>Proyecta diapositiva 9. Revisión Grupal.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Buen trabajo! A ver... ¿por qué la tarjeta de la casa está en el 'Cofre del Tesoro'? ... ¡Exacto! ¡Porque nuestra dirección es un tesoro súper privado! ¿Y el helado? ¡Claro, podemos compartir nuestro sabor favorito!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-7">
+                <h2>⚡ Actividad 7: Clave Secreta de la Misión ⏰ 5 minutos</h2>
+                <p>Consolidar la idea principal de la sesión con una pregunta.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Clave Secreta de la Misión ⏰ 2 minutos</h3>
+                            <p>Proyecta diapositiva 10. Clave Secreta de la Misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Guardianes, misión cumplida! Han sido increíbles. Para guardar este poder que aprendimos, vamos a crear nuestra PRIMERA clave secreta. ¿Cuál fue el tesoro más importante que aprendimos a cuidar hoy?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Clave Secreta de la Misión ⏰ 2 minutos</h3>
+                            <p>Presenta la nueva Clave Secreta en la pantalla.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genial! Para que nunca lo olvidemos, nuestra primera y nueva Clave Secreta es...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Clave Secreta de la Misión ⏰ 1 minutos</h3>
+                            <p>Proyecta diapositiva 11. Grabar y Repetir la Clave Secreta.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Mi nombre, mi casa y mi edad, ¡los guardo bien, es mi privacidad! ¡Repitámosla como robots!... ¡Como susurrando!... ¡Perfecto! Guarden esta clave, porque la usaremos en nuestra próxima aventura. ¡Son unos genios guardianes! 🎉</p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4:¡Han Ganado su Primera Recompensa! ⏰ 1 minutos</h3>
+                            <p>Proyecta diapositiva 11. Grabar y Repetir la Clave Secreta.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Misión de entrenamiento completada! Ahora ya saben cómo funciona una Aventura Digital y han creado su primera clave. ¡Y por este gran esfuerzo, les tengo una noticia increíble!
+
+En Gnius Club, ¡ser responsable y aprender en casa tiene una gran recompensa! A partir de hoy, por cada misión que completen, ganarán algo llamado Mon-e. ¡Nuestras monedas de innovación!
+
+(El facilitador explica con mucho entusiasmo, usando gestos y cambiando el tono de voz)
+
+¿Cómo se gana Mon-e? ¡Muy fácil!
+
+Por cada Aventura Digital como la que hicimos hoy, que completen en casa, ¡cada uno de ustedes gana 10 Mon-e! ¡Felicidades, ya se ganaron los primeros 10!
+En las Misiones de Tecnología que hacemos aquí en clase, ganarán 5 Mon-e.
+¡Y no olviden el bonus! Si todo el equipo completa su proyecto de tecnología en clase, ¡esos 5 Mon-e se duplican a 10!
+
+Y lo más emocionante... ¿Para qué sirven las Mon-e? ¡Para traer su imaginación al mundo real! Podrán canjear sus Mon-e por horas de impresión 3D. Podrán crear sus propios juguetes, inventos, figuras... ¡lo que se les ocurra!
+
+Pero aquí viene la REGLA DE ORO de los grandes creadores. Para poder usar esas Mon-e y desbloquear la impresora 3D, hay una llave secreta: deben completar las 16 Aventuras Digitales en casa a lo largo del año.
+
+¿Por qué? Porque un verdadero Gnius no solo es brillante y creativo, también es responsable y sabe cuidarse en el mundo digital. Al completar sus aventuras, demuestran que están listos para usar todo su poder de creación. ¡Felicidades por sus primeros 10 Mon-e, y bienvenidos a sus Aventuras Digitales! 🎉
+
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
